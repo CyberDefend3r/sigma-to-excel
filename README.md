@@ -4,7 +4,7 @@ Quick script to export sigma formatted detections to an excel spreadsheet.
 ## Usage
   
 ```
-detection_export.py [-h] -i INPUT -o OUTPUT [-l]
+sigma_detection_export.py [-h] -i INPUT -o OUTPUT [-l]
 
 Required arguments:
   -i --input
