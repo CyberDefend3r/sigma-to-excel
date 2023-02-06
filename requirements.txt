@@ -1,0 +1,3 @@
+pathlib
+pandas
+PyYAML >=6.0
