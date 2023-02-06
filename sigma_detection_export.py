@@ -54,7 +54,11 @@ class DetectionData:
         normalized_detection_data["Severity"] = raw_detection_data.get("level", "")
         normalized_detection_data["Name"] = raw_detection_data.get("title", "")
         normalized_detection_data["Description"] = raw_detection_data.get("description", "")
-        normalized_detection_data["False Positives"] = "\n\n".join(raw_detection_data.get("falsepositives", ""))
+        normalized_detection_data["False Positives"] = (
+            "".join(raw_detection_data.get("falsepositives", ""))
+            if isinstance(raw_detection_data.get("falsepositives", ""), list)
+            else raw_detection_data.get("falsepositives", "")
+        )
         if self.logic:
             normalized_detection_data["Detection Logic"] = raw_detection_data["detection"]
 
