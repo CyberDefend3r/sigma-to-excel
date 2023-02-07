@@ -11,7 +11,7 @@ Required arguments:
             Directory path to Active Detections (default: None)
 
   -o --output
-            Path to Output Excel File (default: None)
+            Path to Output Excel File- Include Desired Filename (default: None)
 
 optional arguments:
   -l, --logic
