@@ -1,7 +1,7 @@
 """
 Export Sigma formatted detection library to an excel file.
 
-twitter: @Cyb3r_Detect0r
+twitter: @Cyb3rDefender
 """
 
 from pathlib import Path
